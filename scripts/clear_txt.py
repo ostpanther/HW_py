@@ -26,7 +26,8 @@ for file in txt_files:
     with Path.open(file, "w") as f:
         f.write(new_content)
 # _________________________________________
-
+#rvrvrvrvr
+# 3d33
 # Впишите нужное здесь:
 SUBSTITUTIONS = [
     (r"\[править\]", ""),
