@@ -1,0 +1,22 @@
+# Конфигурация линтера Ruff
+# [https://docs.astral.sh/ruff/]
+
+select = ["ALL"]
+ignore = [
+    "D100",  # missing docstring in public module
+    "D104",  # missing docstring in public package
+    "T201",  # `print` found
+]
+
+# Исключения для правил RUF001, RUF002, RUF003.
+# Разрешаются кириллические буквы, похожие на латинские.
+allowed-confusables = [
+    "А", "В", "Н", "О", "У",
+    "а", "б", "г", "е", "о", "р", "с", "у",
+]
+
+# Стиль строк документации.
+# [https://docs.astral.sh/ruff/rules/#pydocstyle-d]
+# [https://docs.astral.sh/ruff/settings/#pydocstyle]
+[pydocstyle]
+convention = "google"

@@ -1,0 +1,22 @@
+# Папки с текстами
+html
+txt
+
+# Файлы Jupyter Notebook
+*.ipynb
+*.ipynb_checkpoints
+
+# Служебные файлы редакторов кода и т.п.
+.vscode
+*_cache
+*.code-workspace
+
+# Артефакты интерпретатора Python
+__pycache__
+*.pyc
+
+# Виртуальные окружения
+env
+.env
+venv
+.venv

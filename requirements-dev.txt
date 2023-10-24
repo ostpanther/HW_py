@@ -1,0 +1,8 @@
+# Инструменты разработки:
+# - [https://black.readthedocs.io/]
+# - [https://docs.astral.sh/ruff/]
+# - [https://pre-commit.com/]
+
+ruff >= 0.1.1
+black >= 23.7.0
+pre-commit >= 3.5.0
