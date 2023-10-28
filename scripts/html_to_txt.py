@@ -1,7 +1,7 @@
 import bs4
 from tqdm import tqdm
 
-from .paths import HTML_DIR, TXT_DIR
+from .paths import HTML_DIR, RAW_TXT_DIR
 
 
 def html_to_txt() -> None:
@@ -9,14 +9,14 @@ def html_to_txt() -> None:
     # HTML_DIR существует и является директорией (не файлом)
     if not HTML_DIR.is_dir():
         raise NotADirectoryError(HTML_DIR)
-    TXT_DIR.mkdir(parents=True, exist_ok=True)
+    RAW_TXT_DIR.mkdir(parents=True, exist_ok=True)
 
     # Итератор чисел с индикатором выполнения
     iterator = tqdm(range(1, 77))
 
     for i in iterator:
         html_path = HTML_DIR / f"Глава_{i}.html"
-        txt_path = TXT_DIR / f"Глава_{i}.txt"
+        txt_path = RAW_TXT_DIR / f"Глава_{i}.txt"
 
         if not html_path.is_file():
             raise FileNotFoundError(html_path)

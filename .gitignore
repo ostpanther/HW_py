@@ -1,6 +1,7 @@
 # Папки с текстами
 html
 txt
+clear_txt
 
 # Файлы Jupyter Notebook
 *.ipynb
